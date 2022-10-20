@@ -1,0 +1,378 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 CourierNewPS-BoldMT;\f1\fmodern\fcharset0 CourierNewPSMT;}
+{\colortbl;\red255\green255\blue255;\red10\green82\blue135;\red255\green255\blue255;\red29\green38\blue43;
+\red0\green0\blue0;\red15\green114\blue1;\red18\green139\blue2;\red109\green109\blue109;\red0\green0\blue255;
+}
+{\*\expandedcolortbl;;\cssrgb\c0\c40000\c60000;\cssrgb\c100000\c100000\c100000;\cssrgb\c15294\c19608\c22353;
+\cssrgb\c0\c0\c0;\cssrgb\c0\c50980\c0;\cssrgb\c0\c60000\c0;\cssrgb\c50196\c50196\c50196;\cssrgb\c0\c0\c100000;
+}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 import
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \strokec5 java.util.Vector; 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+\pard\pardeftab720\partightenfactor0
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \'a0
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \'a0\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 class
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \strokec5 Producer 
+\f0\b \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 extends
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \strokec5 Thread \{ 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+\pard\pardeftab720\partightenfactor0
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \'a0
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \'a0\
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\cf6 \strokec6 // initialization of queue size 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0
+\f0\b \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 static
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\f0\b\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 final
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\f0\b\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 int
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \strokec5 MAX = \cf7 \strokec7 7\cf4 \strokec5 ; 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0
+\f0\b \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 private
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \strokec5 Vector messages = 
+\f0\b \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 new
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \strokec5 Vector(); 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \'a0\
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\cf8 \strokec8 @Override
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0
+\f0\b \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 public
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\f0\b\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 void
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \strokec5 run() 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\strokec5 \{ 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0
+\f0\b \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 try
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \strokec5 \{ 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0
+\f0\b \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 while
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \strokec5 (
+\f0\b \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 true
+\f1\b0 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec5 ) \{ 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \'a0\
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf6 \strokec6 // producing a message to send to the consumer 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\strokec5 putMessage(); 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \'a0\
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf6 \strokec6 // producer goes to sleep when the queue is full 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\strokec5 sleep(\cf7 \strokec7 1000\cf4 \strokec5 ); 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\strokec5 \} 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\strokec5 \} 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0
+\f0\b \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 catch
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \strokec5 (InterruptedException e) \{ 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\strokec5 \} 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\strokec5 \} 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \'a0\
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0
+\f0\b \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 private
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\f0\b\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 synchronized
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\f0\b\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 void
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \strokec5 putMessage() 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0
+\f0\b \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 throws
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \strokec5 InterruptedException 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\strokec5 \{ 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \'a0\
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf6 \strokec6 // checks whether the queue is full or not 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0
+\f0\b \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 while
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \strokec5 (messages.size() == MAX) 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \'a0\
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf6 \strokec6 // waits for the queue to get empty 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\strokec5 wait(); 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \'a0\
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf6 \strokec6 // then again adds element or messages 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\strokec5 messages.addElement(
+\f0\b \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 new
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \strokec5 java.util.Date().toString()); 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\strokec5 notify(); 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\strokec5 \} 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \'a0\
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0
+\f0\b \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 public
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\f0\b\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 synchronized
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \strokec5 String getMessage() 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0
+\f0\b \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 throws
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \strokec5 InterruptedException 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\strokec5 \{ 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\strokec5 notify(); 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0
+\f0\b \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 while
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \strokec5 (messages.size() == \cf7 \strokec7 0\cf4 \strokec5 ) 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\strokec5 wait(); 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\strokec5 String message = (String)messages.firstElement(); 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \'a0\
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf6 \strokec6 // extracts the message from the queue 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\strokec5 messages.removeElement(message); 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0
+\f0\b \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 return
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \strokec5 message; 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\strokec5 \} 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+\pard\pardeftab720\partightenfactor0
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec5 \} 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+\pard\pardeftab720\partightenfactor0
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \'a0
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \'a0\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 class
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \strokec5 Consumer 
+\f0\b \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 extends
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \strokec5 Thread \{ 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+\pard\pardeftab720\partightenfactor0
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \'a0\'a0\'a0\'a0\strokec5 Producer producer; 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \'a0\
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\strokec5 Consumer(Producer p) 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\strokec5 \{ 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\strokec5 producer = p; 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\strokec5 \} 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \'a0\
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\cf8 \strokec8 @Override
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0
+\f0\b \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 public
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\f0\b\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 void
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \strokec5 run() 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\strokec5 \{ 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0
+\f0\b \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 try
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \strokec5 \{ 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0
+\f0\b \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 while
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \strokec5 (
+\f0\b \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 true
+\f1\b0 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec5 ) \{ 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\strokec5 String message = producer.getMessage(); 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \'a0\
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf6 \strokec6 // sends a reply to producer got a message 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\strokec5 System.out.println(\cf9 \strokec9 "Got message: "
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \strokec5 + message); 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\strokec5 sleep(\cf7 \strokec7 2000\cf4 \strokec5 ); 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\strokec5 \} 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\strokec5 \} 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0
+\f0\b \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 catch
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \strokec5 (InterruptedException e) \{ 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\strokec5 \} 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\strokec5 \} 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \'a0\
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0
+\f0\b \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 public
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\f0\b\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 static
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\f0\b\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 void
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \strokec5 main(String args[]) 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\strokec5 \{ 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\strokec5 Producer producer = 
+\f0\b \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 new
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \strokec5 Producer(); 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\strokec5 producer.start(); 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0
+\f0\b \AppleTypeServices\AppleTypeServicesF65539 \cf2 \strokec2 new
+\f1\b0\fs24 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec4  
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \strokec5 Consumer(producer).start(); 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \'a0\'a0\'a0\'a0\strokec5 \} 
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+\pard\pardeftab720\partightenfactor0
+
+\fs29\fsmilli14667 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \strokec5 \}
+\fs24 \AppleTypeServices\AppleTypeServicesF65539 \strokec4 \
+}
