@@ -13,4 +13,4 @@ https://www.claflin.edu/ https://www.claflin.edu/academics-research/schools-depa
 [Claflin University, Orangeburg, South Carolina, USA.](https://www.claflin.edu/docs/default-source/academic-affairs-student-services/2018-2020-undergraduate-catalog_final_aug-21-2019_web.pdf?sfvrsn=15bf3f0e_6)
 
 BST.java: Binary Search Tree in Java.
-selected method(processUsingCpu, rgbaToGreyscaleCpu,clSetKernelArg, show_users_in_jtable, jButton5ActionPerformed, jComboBox1ActionPerformed, jTable1MouseClicked, users)
+selected method(processUsingCpu, rgbaToGreyscaleCpu,clSetKernelArg, show_users_in_jtable, jButton5ActionPerformed, jComboBox1ActionPerformed, jTable1MouseClicked, users).
