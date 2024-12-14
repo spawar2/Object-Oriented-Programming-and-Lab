@@ -4,6 +4,7 @@ CSCI207 Learning Objectives [# Object-Oriented-Programming-and-Lab 4 Credits](ht
 [Youtube Teaching Channel:](https://www.youtube.com/playlist?list=PLKka-JHtsz80sJ_uQ8wZ4cnLNB9yRJNoV)
 
 Object Oriented Programming (topics including inheritance, msg passing, polymorphism, recursion, abstraction, encapsulation, software design techniques, etc.).
+![download](https://github.com/user-attachments/assets/9507cf65-9976-4cf9-a2e8-fdf949f871ca)
 
 [Git Version Control:](https://youtu.be/IM56cFOyCZM)
 
