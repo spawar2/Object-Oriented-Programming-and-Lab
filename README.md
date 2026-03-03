@@ -7,7 +7,7 @@ Object Oriented Programming (topics including inheritance, msg passing, poly
 ![download](https://github.com/user-attachments/assets/9507cf65-9976-4cf9-a2e8-fdf949f871ca)
 
 [Git Version Control:](https://youtu.be/IM56cFOyCZM)
-
+Student Evaluations (2021-2026): https://www.claflin-computation.com/_files/ugd/81dd80_ae28e89ed22e41c39513d1764b5c9628.pdf
 [Github:](https://github.com/spawar2/Object-Oriented-Programming-Laboratory)
 **Undergraduate Class & Lab https://campuspress.yale.edu/shrikantpawar/files/2024/05/Student-Evaluations-2021-2024-3df60a3eaf357f31.pdf
 https://www.claflin.edu/ https://www.claflin.edu/academics-research/schools-departments/school-of-natural-sciences-and-mathematics/department-of-mathematics-computer-science/computer-science
